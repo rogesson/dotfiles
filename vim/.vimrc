@@ -25,6 +25,6 @@ set noswapfile
 imap jk <Esc> 
 
 syntax on
-autocmd Filetype go setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4 smartindent smarttab
+autocmd Filetype go setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4  smarttab
 autocmd Filetype python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
