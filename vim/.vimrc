@@ -1,5 +1,7 @@
 set nowrap
 set number
+set backspace=2
+set relativenumber
 set path+=**
 set ignorecase
 set showmode
@@ -21,10 +23,16 @@ set incsearch
 set nobackup
 set nowritebackup
 set noswapfile
+set splitright
+set splitbelow
 
 imap jk <Esc> 
 
 syntax on
-autocmd Filetype go setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4  smarttab
-autocmd Filetype python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype python setlocal tabstop=2 softtabstop=2 shiftwidth=4
+
+call plug#begin('~/.vim/plugged')
+Plug 'dense-analysis/ale'
+call plug#end()
 
