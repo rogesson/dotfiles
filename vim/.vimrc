@@ -8,10 +8,12 @@ set showmode
 filetype plugin indent on
 
 set tabstop=2
-set softtabstop=0
-set expandtab
 set shiftwidth=2
-set smarttab
+set shiftround
+set expandtab
+
+set textwidth=80
+set colorcolumn=+1
 
 set laststatus=2
 set background=dark
@@ -28,8 +30,8 @@ set splitbelow
 imap jk <Esc> 
 
 syntax on
-autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
-autocmd Filetype python setlocal tabstop=2 softtabstop=2 shiftwidth=4
+"autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
+"autocmd Filetype python setlocal tabstop=2 softtabstop=2 shiftwidth=4
 
 call plug#begin('~/.vim/plugged')
 Plug 'dense-analysis/ale'
