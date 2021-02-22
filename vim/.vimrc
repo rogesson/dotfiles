@@ -1,5 +1,6 @@
 set nowrap
 set number
+set relativenumber
 set backspace=2
 set path+=**
 set ignorecase
