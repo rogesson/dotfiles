@@ -36,5 +36,6 @@ syntax on
 
 call plug#begin('~/.vim/plugged')
 Plug 'dense-analysis/ale'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
