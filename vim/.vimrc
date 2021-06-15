@@ -28,13 +28,15 @@ set noswapfile
 set splitright
 set splitbelow
 
-imap jk <Esc> 
+imap jk <Esc>
+autocmd BufWritePre * :%s/\s\+$//e " Remove Spaces
 
 syntax on
 "autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
-"autocmd Filetype python setlocal tabstop=2 softtabstop=2 shiftwidth=4
+autocmd Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 call plug#begin('~/.vim/plugged')
 Plug 'dense-analysis/ale'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
